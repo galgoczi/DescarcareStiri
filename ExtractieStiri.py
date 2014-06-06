@@ -113,4 +113,4 @@ def main():
 	for t in thread_list:
 		threading.Thread(target=t.scriere_pe_fisier).start()
 if __name__ == "__main__":
-    main()
+	main()
