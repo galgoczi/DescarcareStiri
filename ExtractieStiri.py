@@ -82,7 +82,6 @@ class Site(threading.Thread):
 					titlu_fisier = x[:x.index('\n\n')]
 					titlu_fisier = re.sub('[\n?/]', '', titlu_fisier)
 					conditie_fisier = x[x.index('\n\n'):x.index('\n\n\n')]
-					#conditie_fisier = re.sub('[\n?/]', '', conditie_fisier)
 					if verificare_titlu == titlu_fisier:
 						break
 					lista.append(titlu_fisier)											
