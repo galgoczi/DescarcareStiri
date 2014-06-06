@@ -95,7 +95,7 @@ class Site(threading.Thread):
 					pass			
 			if lista:
 				verificare_titlu = max(lista)
-			time.sleep(15)			
+			time.sleep(120)			
 
 options = '[1] Bloomberg\n\n[2] Fxstreet '
 user_options = raw_input('\nSelect options:\n\n' + options + '\n') # 1 2 / 1 / 2
