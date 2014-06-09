@@ -3,7 +3,6 @@ import re
 import threading
 import time
 import datetime
-import os
 import requests
 
 class Site(threading.Thread):
