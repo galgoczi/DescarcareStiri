@@ -5,7 +5,7 @@ import time
 import datetime
 import requests
 
-class Site(threading.Thread):
+class Site:
 	continut = ''
 	lista_href = []
 	lista_text = []
