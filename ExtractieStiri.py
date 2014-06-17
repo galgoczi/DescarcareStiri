@@ -6,7 +6,7 @@ import datetime
 import requests
 
 class Site:
-	continut = ''
+
 	lista_href = []
 	lista_text = []
 	
@@ -19,7 +19,6 @@ class Site:
 		page = requests.get(storyid)
 		soup = BeautifulSoup(page.text)
 		continut = soup.find(tag1,{tag2: tag3}) # exemplu: continut = soup.find('div',{'itemprop':'articleBody'})
-		self.continut = continut
 		return continut
 
 	def extractie_href(self):
