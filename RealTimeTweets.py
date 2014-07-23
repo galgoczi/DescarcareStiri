@@ -10,8 +10,8 @@ word_to_track = 'Forex,$usd' # pentru a cauta mai multe cuvinte: ex: 'Forex,duba
 keys_from_dict = 'text'
 
 class Tweeter(TwythonStreamer):
+	list_of_tweets = []
 	def on_success(self, data):
-		list_of_tweets = []
 		endtime = datetime.datetime.now().strftime('%H:%M:%S')
 		today = datetime.date.today()
 		list_of_tweets.append(data[keys_from_dict].encode('utf-8')+'\n')	
