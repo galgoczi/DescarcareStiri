@@ -3,10 +3,10 @@ import datetime
 import threading
 from Queue import Queue
 
-APP_KEY = 'eRkLvy8ZrplK0BJxpkLbT5pYO'
-APP_SECRET = 'lihgnO8ZnBsPoBYQAy4oI2iUQY3iSuFvf867RElWHgj8CF0DVy'
-ACCESS_TOKEN = '2574597132-wNsBwJtHd1VZPFoP2iucrXNzzscROzpMEUpUJkt'
-ACCESS_TOKEN_SECRET = 'oaQypcrlTlQT9BMEVLG4s8YbVo30cQcfbbuPuX1AfGkt5'
+APP_KEY = '...'
+APP_SECRET = '...'
+ACCESS_TOKEN = '...'
+ACCESS_TOKEN_SECRET = '...'
 path_options = raw_input('Save file to a specific path:\n')
 word_to_track = 'RT,and,tweet' # pentru a cauta mai multe cuvinte: ex: 'Forex,dubai,obama,$USD....'
 
