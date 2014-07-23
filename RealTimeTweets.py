@@ -8,10 +8,10 @@ ACCESS_TOKEN_SECRET = '...'
 path_options = raw_input('Save file to a specific path:\n')
 word_to_track = 'Forex,$usd' # pentru a cauta mai multe cuvinte: ex: 'Forex,dubai,obama,$USD....'
 keys_from_dict = 'text'
-list_of_tweets = []
 
 class Tweeter(TwythonStreamer):
 	def on_success(self, data):
+		list_of_tweets = []
 		endtime = datetime.datetime.now().strftime('%H:%M:%S')
 		today = datetime.date.today()
 		list_of_tweets.append(data[keys_from_dict].encode('utf-8')+'\n')	
